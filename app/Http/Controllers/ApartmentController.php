@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class ApartmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,13 +34,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        if($user = User::create([
-            'name' => $request['name'],
-            'surname' => $request['surname'],
-            'email' => $request['email'],
-            'password' => $request['password'],
-            'remember_token' => $request['remember_token'],
-        ]))
+        //
     }
 
     /**
